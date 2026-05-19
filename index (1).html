@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayur Ceria - Game Jualan Sayuran</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="title">
+        <h1>Sayur Ceria!</h1>
+        <p>Tanam sayur sendiri, panen, dan jual untuk koin imut.</p>
+      </div>
+      <div class="scoreboard">
+        <div>💰 Koin: <span id="coins">10</span></div>
+        <div>🌱 Benih: <span id="seeds">5</span></div>
+        <div>🥕 Panen: <span id="harvested">0</span></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="farm-panel">
+        <div class="farm-header">
+          <h2>Kebun Sayur</h2>
+          <p>Pilih kotak, tanam benih, siram, lalu panen!</p>
+        </div>
+        <div class="farm-grid" id="farmGrid"></div>
+      </section>
+
+      <aside class="shop-panel">
+        <div class="panel-card">
+          <h3>Tindakan</h3>
+          <button id="plantBtn" class="action-btn">🌱 Tanam</button>
+          <button id="waterBtn" class="action-btn">💧 Siram</button>
+          <button id="harvestBtn" class="action-btn">🌾 Panen</button>
+        </div>
+
+        <div class="panel-card">
+          <h3>Toko Sayur</h3>
+          <div class="shop-item">
+            <span>Benih baru</span>
+            <button id="buySeedsBtn">Beli 3 benih (5 koin)</button>
+          </div>
+          <div class="shop-item">
+            <span>Jual hasil panen</span>
+            <button id="sellBtn">Jual semua</button>
+          </div>
+        </div>
+
+        <div class="panel-card">
+          <h3>Status</h3>
+          <p id="message">Selamat datang! Klik salah satu kotak kebun untuk memulai.</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
